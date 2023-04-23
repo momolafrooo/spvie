@@ -1,0 +1,648 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@100;300;400;500;600;700;800&family=Suez+One&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-bottom: 23px;
+}
+
+main .banner {
+  padding: 0 45px;
+  position: relative;
+}
+
+main .banner .image {
+  position: relative;
+}
+
+main .banner .image .header {
+  position: absolute;
+  padding: 29px 39px;
+  color: white;
+}
+
+.image .header .trust-pilot {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 7px;
+}
+
+.image .header .trust-pilot-score {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 148.5%;
+}
+
+.image .header .trust-pilot-score .stars {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.image .header .trust-pilot-score .stars .green-box {
+  background: #00b67a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 25px;
+  width: 25px;
+}
+
+.trust-pilot-score .stars .green-box:last-child {
+  width: 10px !important;
+}
+
+.trust-pilot-score .stars .green-box:last-child img {
+  right: -10px !important;
+}
+
+.trust-pilot-score .stars .green-box img {
+  position: absolute;
+}
+
+main .banner .image .info {
+  position: absolute;
+  left: 17px;
+  bottom: 17px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 23px 38px;
+
+  font-family: "Raleway";
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.002em;
+}
+
+main .banner .form-container {
+  position: absolute;
+  width: 40%;
+  right: 45px;
+  top: 36px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  padding: 23px 36px;
+}
+
+main .banner .form-container .title {
+  font-family: "Suez One";
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 46px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.002em;
+  margin-bottom: 28px;
+  color: #000000;
+}
+
+main .banner .form-container form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  align-items: center;
+  column-gap: 110px;
+  row-gap: 20px;
+}
+
+.form-container form .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container form .form-group label {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.002em;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.form-container form .form-group input {
+  height: 40px;
+  border: 1px solid #919191;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.form-container form .form-group .checkbox-group {
+  display: flex;
+  gap: 33px;
+}
+
+.form-container form .form-group.wide {
+  grid-column: span 2;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* The container */
+.radio-button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.radio-button input {
+  position: absolute;
+  opacity: 0 !important;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  width: 77px;
+  height: 39px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.002em;
+  color: #000000;
+
+  border: 1px solid #919191;
+  border-radius: 10px;
+}
+
+/* On mouse-over, add a grey background color */
+.radio-button:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.radio-button input:checked ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* The container */
+.checkbox {
+  display: block;
+  display: flex;
+  gap: 20px;
+}
+
+.checkbox input {
+  transform: scale(2);
+  border: 1px solid #919191 !important;
+  border-radius: 5px !important;
+  margin-left: 8px;
+}
+
+.checkbox label {
+  font-family: "Raleway";
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 11px !important;
+  line-height: 13px !important;
+  display: flex !important;
+  align-items: center !important;
+  letter-spacing: 0.002em !important;
+
+  color: #000000;
+}
+
+.btn-success {
+  width: 147px;
+  height: 40px;
+  background: #00ce8d;
+  border-radius: 5px;
+  border: 0;
+
+  font-family: "Suez One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.002em;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+main .features {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 0;
+}
+
+main .features .feature-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.002em;
+
+  color: #000000;
+}
+
+main .recap {
+  background: rgba(242, 208, 192, 0.25);
+  padding-top: 70px;
+  padding-bottom: 37px;
+}
+
+main .recap .bonus {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1240px;
+  height: 143px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 30px;
+}
+
+main .recap .ask-devis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .recap .bonus .title {
+  font-family: "Suez One" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 21px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center;
+  margin-left: 0 !important;
+  margin-bottom: 23px;
+
+  color: #000000 !important;
+}
+
+main .recap .bonus .description {
+  font-family: "Raleway" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+
+  display: flex !important;
+  justify-content: center !important;
+
+  color: #000000 !important;
+}
+
+main .recap .offers {
+  padding-bottom: 30px;
+  display: flex;
+  gap: 41px;
+  overflow-x: auto;
+}
+
+main .recap .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 68px;
+  margin-left: 100px;
+}
+
+main .recap .offer-item {
+  min-width: 331px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 30px;
+}
+
+main .first {
+  margin-left: 100px;
+}
+
+main .recap .offer-item .name {
+  font-family: "Suez One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 25px;
+
+  color: #000000;
+}
+
+main .recap .offer-item .footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+main .recap .offer-item .row .title {
+  font-family: "Raleway" !important;
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 16px !important;
+  line-height: 19px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  text-decoration-line: underline !important;
+  margin: 0 0 5px 0 !important;
+
+  color: #000000 !important;
+}
+
+main .recap .offer-item .row {
+  margin-bottom: 35px;
+}
+
+main .recap .offer-item .row.info .title {
+  font-weight: bold !important;
+  color: black !important;
+}
+
+main .recap .offer-item .row.info .item .title {
+  display: block !important;
+  text-align: left !important;
+  color: black !important;
+}
+
+main .recap .offer-item .row.info .item .title a {
+  color: black !important;
+}
+
+main .recap .offer-item .row .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+main .recap .offer-item .row .item .title {
+  font-family: "Raleway" !important;
+  font-style: normal !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+  text-align: center !important;
+  margin: 0 0 5px 0 !important;
+  text-decoration-line: none !important;
+
+  color: #757373 !important;
+}
+
+main .recap .offer-item .row .item .value {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 0 5px 0 !important;
+
+  color: #000000;
+}
+
+main .pub-section {
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
+
+main .pub-section .pub {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1239px;
+  height: 276px;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  padding: 0 37px;
+
+  background: rgba(242, 208, 192, 0.25);
+  border-radius: 10px;
+}
+
+main .pub-section .pub .left-section {
+  position: relative;
+}
+
+main .pub-section .pub .left-section img {
+  position: absolute;
+  bottom: 0;
+}
+
+main .pub-section .pub .right-section {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-direction: column;
+  color: #000000;
+}
+
+main .pub-section .pub .right-section .title {
+  font-family: "Raleway" !important;
+  font-style: normal !important;
+  font-size: 30px !important;
+  line-height: 24px !important;
+  margin-bottom: 20px;
+
+  display: flex !important;
+  justify-content: center !important;
+  letter-spacing: 0.002em !important;
+
+  color: #000000;
+}
+
+main .pub-section .pub .right-section .description {
+  font-family: "Raleway" !important;
+  font-style: normal !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  margin: 0 !important;
+  text-align: center !important;
+  margin-bottom: 32px !important;
+
+  color: #000000;
+}
+
+main .pub-section .pub .right-section .apps {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 90px !important;
+
+  color: #000000;
+}
+
+main .testimonials .title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 24px;
+  margin-bottom: 50px;
+  margin-left: 100px;
+
+  letter-spacing: 0.002em;
+
+  color: #000000;
+}
+
+main .testimonials .testimonial-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  overflow-x: auto;
+}
+
+main .testimonials .testimonial-container .testimonial-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 277px;
+  margin-bottom: 30px;
+  background-image: url("../images/testimonial-form.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 275px;
+}
+
+main .testimonials .testimonial-container .testimonial-item .fullname {
+  font-family: "Raleway";
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.002em;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+main .testimonials .testimonial-container .testimonial-item .note {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+main .testimonials .testimonial-container .testimonial-item .content {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.002em;
+
+  color: #000000;
+}
+
+main .infos {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.002em;
+  margin-bottom: 46px;
+
+  color: #000000;
+}
+
+footer {
+  background: rgba(242, 208, 192, 0.5);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+footer img {
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+footer section a {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  align-items: center;
+  letter-spacing: 0.002em;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+}
+
+footer section:not(:first-child) {
+  padding-top: 20px;
+}
